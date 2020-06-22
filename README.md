@@ -2,8 +2,7 @@
 Otázky ke státnicím pro TUL/IT bakaláře
 
 
-#**Tematické okruhy ke státní závěrečné zkoušce**
-Určeno pro studenty bakalářského oboru **Informační technologie** FM TUL.
+#**Tematické okruhy ke státní závěrečné zkoušce**, určeno pro studenty bakalářského oboru **Informační technologie** FM TUL.
 
 **Matematika**:
 1. Posloupnosti reálných čísel, limity. Spojitost a limita funkce. (Definice, výpočty, praktický význam.)

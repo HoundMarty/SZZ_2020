@@ -1,0 +1,1 @@
+# Sekvenční obvody

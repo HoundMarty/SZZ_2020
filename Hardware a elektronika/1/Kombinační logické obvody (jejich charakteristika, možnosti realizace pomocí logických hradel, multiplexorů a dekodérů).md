@@ -1,6 +1,6 @@
 # Kombinační logické obvody
 
-Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými slovy neberou potaz v historii, nemají paměť. Skladají se pouze z logických hradel (AND,OR,NAND) a neobsahují zpětnou vazbu. Jakoukoliv implementaci je možné vyjádřit pomocí hradel NAND a invertorů. To se dá odůvodnit přes tzv. duální tvrzení (duální tvrzení - výsledek operace se nezmění, pokud invertujeme vstupy, výstupy i operaci (or↔and, tedy A or B = not(A) nand not(B))). NAND se používá, protože je konstrukčně nejjednodušší (AND je NAND s invertorem). Vyplýva to z možnosti zapsat A OR B = NOT(A) NAND NOT(B)1). Hradlo NAND je mozne použít jako invertor, pokud se připojí na oba vstupy stejný signál (ale je to „drahé“).
+Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými slovy neberou potaz v historii, nemají paměť. Skladají se pouze z logických hradel (AND,OR,NAND) a neobsahují zpětnou vazbu. Jakoukoliv implementaci je možné vyjádřit pomocí hradel NAND a invertorů. To se dá odůvodnit přes tzv. duální tvrzení (duální tvrzení - výsledek operace se nezmění, pokud invertujeme vstupy, výstupy i operaci (or↔and, tedy A or B = not(A) nand not(B))). NAND se používá, protože je konstrukčně nejjednodušší (AND je NAND s invertorem). Vyplýva to z možnosti zapsat A OR B = NOT(A) NAND NOT(B). Hradlo NAND je mozne použít jako invertor, pokud se připojí na oba vstupy stejný signál (ale je to „drahé“).
 
 * kombinační obvody nemají zpětnou vazbu (a tedy ani paměť)
 * reagují na vstup téměř okamžitě patřičnou úpravou výstupu (pouze fyziklní limity)

@@ -8,7 +8,7 @@ Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými sl
 * kodér vs dekodér: kódování z jednoho do druhého a naopak. Například kód 1 z N na binární číslo (běžně má kodér 2n vstupů a n výstupů, dekodér naopak)
 * multiplexor vs demultiplexor: výběr jednoho signálu z mnoha vs poslání vstupu na jeden z výstupů, má adresní vodiče, vnitřně využívá dekodér (jak multiplexor, tak demultiplexor)
 * sčítačka: jednobitová poloviční: XOR a AND, výstup z XORu je výsledek, z ANDu je carry
-* úplná sčítačka: dvě poloviční za sebou, znát schéma! (výsledek je prostě součet těch 3 vstupů, tedy A, B a Cin, vyšší bit výsledku je Cout, nižší S)
+* úplná sčítačka: dvě poloviční za sebou, znát schéma! (výsledek je prostě součet těch 3 vstupů, tedy A, B a C<sub>in</sub>, vyšší bit výsledku je C<sub>out</sub>, nižší S)
 
 ###### Logické hradla
 ![Logické hradla](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/log_hradla_znaceni.gif?raw=true "Log. hradla")
@@ -18,8 +18,8 @@ Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými sl
 ![pst_tabulky](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/hradla_tabulka_pravdivostni.png?raw=true "pst_tabulky_log_hradel")
 
 
-### Binární sčítačka
-###### Poloviční
+## Binární sčítačka
+#### Poloviční
 ![polo_scitacka](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/polo_scitacka.png?raw=true "polo_scitacka")
 
 A,B jsou vstupy
@@ -35,10 +35,10 @@ C je carry bit
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 0 | 1 |
 
-###### Úplná
+#### Úplná
 ![uplna_scitacka](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/scitacka.png?raw=true "uplna_scitacka")
 
-| A | B | Cin | S | Cout |
+| A | B | C<sub>in</sub> | S | C<sub>out</sub> |
 |:-:|:-:| :-: |:-:| :-:  |
 | 0 |	0 |	 0  |	0	| 0    |
 | 0	| 1 |	 0  |	1	| 0    |
@@ -48,3 +48,13 @@ C je carry bit
 | 0	| 1 |	 1	| 0	| 1    |
 | 1	| 0 |	 1	| 0	| 1    |
 | 1	| 1	|  1	| 1	| 1    |
+
+## Multiplexor
+Z několika vstupů vybírá jeden. Realizace pomocí dekodéru a AND hradel a OR hradla. S<sub>0</sub> a S<sub>1</sub> jsou bity „adresy“, podle které se vybírá jeden ze vstupů I<sub>0–3</sub> a posílá se na výstup. Počet vstupů je 2<sup>n</sup>, kde n je počet bitů adresy. To protože je 2n kombinací hodnot bitů adresy.
+
+![Multipexor](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/multiplexor.png?raw=true "Multiplexor")
+
+## Demultiplexor
+Jeden vstup přiřadí do správného výstupu. Dekodér a AND hradla. Opět zde figuruje adresa S<sub>0 – n</sub>, tentokrát její rozsah určuje počet výstupů. Princip je přesně opačný, než u multiplexoru.
+
+![Demultipexor](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/demultiplexor.png?raw=true "Demultiplexor")

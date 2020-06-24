@@ -16,3 +16,35 @@ Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými sl
 
 ###### Pravdivostní tabulky hradel
 ![pst_tabulky](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/hradla_tabulka_pravdivostni.png?raw=true "pst_tabulky_log_hradel")
+
+
+### Binární sčítačka
+###### Poloviční
+![polo_scitacka](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/polo_scitacka.png?raw=true "polo_scitacka")
+
+A,B jsou vstupy
+
+S je výsledná suma
+
+C je carry bit
+
+| A | B | S | C |
+|:-:|:-:|:-:|:-:|
+| 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+###### Úplná
+![uplna_scitacka](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/scitacka.png?raw=true "uplna_scitacka")
+
+| A | B | Cin | S | Cout |
+|:-:|:-:| :-: |:-:| :-:  |
+| 0 |	0 |	 0  |	0	| 0    |
+| 0	| 1 |	 0  |	1	| 0    |
+| 1	| 0 |	 0  |	1	| 0    |
+| 1	| 1 |	 0  | 0	| 1    |
+| 0	| 0 |	 1	| 1	| 0    |
+| 0	| 1 |	 1	| 0	| 1    |
+| 1	| 0 |	 1	| 0	| 1    |
+| 1	| 1	|  1	| 1	| 1    |

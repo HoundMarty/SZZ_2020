@@ -12,3 +12,7 @@ Jsou to takové logické obvody, která okamžitě reagují na vstup. Jinými sl
 
 ###### Logické hradla
 ![Logické hradla](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/log_hradla_znaceni.gif?raw=true "Log. hradla")
+
+
+###### Pravdivostní tabulky hradel
+![pst_tabulky](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/1/hradla_tabulka_pravdivostni.png?raw=true "pst_tabulky_log_hradel")

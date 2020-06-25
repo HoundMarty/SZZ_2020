@@ -81,7 +81,7 @@ Zkratkou SIPO se označují posuvné registry se sériovým vstupem a paralelní
 
 ![4bit_SIPO_reg](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/4bit_posuvny_registr_SIPO.png "4bit SIPO registr")
 
-![Reakce na impuls](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/posuvny_registr_cas_diagram.png "Posuvný registr - časový diagram)
+![Reakce na impuls](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/posuvny_registr_cas_diagram.png "Posuvný registr - časový diagram")
 ### PISO
 PISO jsou posuvné registry s paralelním vstupem a seriovým výstupem (Parallel Input Serial Output). Slouží předevší ke kódování paralelních binárních dat do sériové podoby. Příkladem tohoto typu registru je obvod 74HC166, což je samostatný integrovaný osmibitový PISO posuvný registr.
 

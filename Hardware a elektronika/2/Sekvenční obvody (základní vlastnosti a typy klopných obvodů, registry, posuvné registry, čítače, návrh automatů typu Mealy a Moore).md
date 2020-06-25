@@ -38,31 +38,31 @@ Reset/Set
 ### T
 Toggle, přepínač. Změna se provede pouze pokud přijde signál hodin.
 
-| T | Q | Qdalší |     Akce     |
-|:-:|:-:|:------:|:------------:|
-| 0 | 0 |    0   | Ponechá stav |
-| 0 | 1 |    1   | Ponechá stav |
-| 1 | 0 |    1   |   Přepnutí   |
-| 1 | 1 |    0   |   Přepnutí   |
+| T | Q | Q<sub>další</sub> |     Akce     |
+|:-:|:-:|:-----------------:|:------------:|
+| 0 | 0 |    0              | Ponechá stav |
+| 0 | 1 |    1              | Ponechá stav |
+| 1 | 0 |    1              |   Přepnutí   |
+| 1 | 1 |    0              |   Přepnutí   |
 
 ### JK
 Kombinace RS a T. Odstraňuje nedefinovaný stav u RS (J = S, K = R) při kterém funguje jako T.
 
-| J | K |  Qdalší  |     Akce     |
-|:-:|:-:|:--------:|:------------:|
-| 0 | 0 |  Qminulý | Ponechá stav |
-| 0 | 1 |     0    |     Reset    |
-| 1 | 0 |     1    |      Set     |
-| 1 | 1 | !Qminulý |   Přepnutí   |
+| J | K |  Q<sub>další</sub>  |     Akce     |
+|:-:|:-:|:-------------------:|:------------:|
+| 0 | 0 |  Q<sub>minulý</sub> | Ponechá stav |
+| 0 | 1 |     0               |     Reset    |
+| 1 | 0 |     1               |      Set     |
+| 1 | 1 | !Q<sub>minulý</sub> |   Přepnutí   |
 
 ### D
 Data – je-li na D 1, nastaví se při impulzu z hodin na 1, je-li 0, nastaví se na 0. Bez impulzu hodin stav vstup D ignoruje a pamatuje si předchozí stav.
 
-| Hodiny | D |    Q    |
-|:------:|:-:|:-------:|
-|    1   | 0 |    0    |
-|    1   | 1 |    1    |
-|    0   |   | Qminulý |
+| Hodiny | D |    Q               |
+|:------:|:-:|:------------------:|
+|    1   | 0 |    0               |
+|    1   | 1 |    1               |
+|    0   |   | Q<sub>minulý</sub> |
 
 ## Čítače
 Nejjednodušeji je to řada D klopných obvodů které mají vždy svůj invertovaný výstup připojený na svůj vlastní vstup, a jako vstup hodin používají výstup předchozího klopného obvodu (kromě prvního, ten má normální hodinový vstup). Kromě binárního čítače fungují také jako děličky frekvencí.
@@ -95,8 +95,8 @@ Sekvenční automat je šestice: A=(X,Y,Q,q0,P,V) kde:
 2. Y je výstupní abeceda (množina hodnot výstupního vektoru)
 3. Q je vnitřní abeceda (množina hodnot vektoru vnitřního stavu)
 4. q0 je podmnožinou Q, je to počáteční stav, ze kterého se vždy startuje
-5. P je přechodová funkce, která některým dvojicím z <m>X * Q</m> přirazuje prvek z Q a platí <m>q_(i+1) = P(x_i,q_i)</m>, pro i = 0,1,2,…,n
-5. V je výstupní funkce, která některým dvojicím z <m>X * Q</m> přirazuje prvek z Y.
+5. P je přechodová funkce, která některým dvojicím z X * Q přirazuje prvek z Q a platí q<sub>(i+1)</sub> = P(x<sub>i</sub>,q<sub>i</sub>), pro i = 0,1,2,…,n
+5. V je výstupní funkce, která některým dvojicím z X * Q přirazuje prvek z Y.
 
 Existují dva způsoby definice výstupní funkce: Mealyho a Moorův.
 

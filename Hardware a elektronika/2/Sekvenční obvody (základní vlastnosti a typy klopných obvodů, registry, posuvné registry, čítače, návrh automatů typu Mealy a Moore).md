@@ -102,10 +102,40 @@ Existují dva způsoby definice výstupní funkce: Mealyho a Moorův.
 
 ### Mealyho
 Výstup je funkcí vstupu i stavu.
-**doplnit info z přednášky č.5
+
+![Mealy_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/mealy.png "Mealyho automat")
+
+### Tabulka přechodů a výstupů Mealyho automatu
+| Stav Q<sub>t</sub> | Vstup N | budoucí stav Q<sub>t+1</sub> | výstup Z |
+|:------------------:|:-------:|:----------------------------:|:--------:|
+|         S0         |    0    |              S1              |     0    |
+|         S0         |    1    |              S0              |     0    |
+|         S1         |    0    |              S2              |     0    |
+|         S1         |    1    |              S3              |     0    |
+|         S2         |    0    |              S2              |     0    |
+|         S2         |    1    |              S0              |     1    |
+|         S3         |    0    |              S0              |     0    |
+|         S3         |    1    |              S0              |     1    |
 
 ### Moorův
 Výstup je funkcí pouze stavu.
+
+![Moor_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/moor.png "Moorův automat")
+
+### Tabulka přechodů a výstupůMoorova automatu
+|    |  1 |  0 | Z |
+|:--:|:--:|:--:|:-:|
+| S0 | S0 | S1 | 0 |
+| S1 | S3 | S2 | 0 |
+| S2 | S4 | S2 | 0 |
+| S3 | S0 | S4 | 0 |
+| S4 | S0 | S1 | 1 |
+
+#### Návrh asynchronních sekvenčních systémů
+* Nutno zajistit, aby při přechodu do nějakého stavu byl tento stabilní (změna vstupu, která způsobila přechod, nezpůsobí další přechod)
+* Nutno odstranit hazardy, které by mohly způsobit nežádoucí změnu stavu
+* Používat jen u jednoduchých zapojení, kde se dá intuitivně vyhnout nežádoucím jevům
+
 
 # Shrnutí
 * mají zpětnou vazbu (paměť, stav)

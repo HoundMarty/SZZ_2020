@@ -122,7 +122,7 @@ Výstup je funkcí pouze stavu.
 
 ![Moor_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/moor.PNG "Moorův automat")
 
-### Tabulka přechodů a výstupůMoorova automatu
+### Tabulka přechodů a výstupů Moorova automatu
 |    |  1 |  0 | Z |
 |:--:|:--:|:--:|:-:|
 | S0 | S0 | S1 | 0 |

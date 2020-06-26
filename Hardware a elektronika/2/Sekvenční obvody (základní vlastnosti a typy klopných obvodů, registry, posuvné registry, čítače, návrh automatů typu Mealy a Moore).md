@@ -103,7 +103,7 @@ Existují dva způsoby definice výstupní funkce: Mealyho a Moorův.
 ### Mealyho
 Výstup je funkcí vstupu i stavu.
 
-![Mealy_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/mealy.png "Mealyho automat")
+![Mealy_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/mealy.PNG "Mealyho automat")
 
 ### Tabulka přechodů a výstupů Mealyho automatu
 | Stav Q<sub>t</sub> | Vstup N | budoucí stav Q<sub>t+1</sub> | výstup Z |
@@ -120,7 +120,7 @@ Výstup je funkcí vstupu i stavu.
 ### Moorův
 Výstup je funkcí pouze stavu.
 
-![Moor_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/moor.png "Moorův automat")
+![Moor_mat](https://github.com/HoundMarty/SZZ_2020/blob/master/Hardware%20a%20elektronika/2/moor.PNG "Moorův automat")
 
 ### Tabulka přechodů a výstupůMoorova automatu
 |    |  1 |  0 | Z |

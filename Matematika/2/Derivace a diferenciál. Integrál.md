@@ -1,0 +1,1 @@
+# Derivace a diferenciál. Integrál.

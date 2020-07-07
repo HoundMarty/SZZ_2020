@@ -2,6 +2,8 @@
 
 Derivace je základní pojem v diferenciálním počtu, má významnou roli například při určování průběhu funkce.
 
+## Derivace
+
 ### Co je to derivace?
 
 Derivací funkce získáme směrnici těčny. Jednoduše řečeno, tečna je přímka, která se daného grafu dotýká právě v jednom bodě. Přesná definice níže.
@@ -98,3 +100,22 @@ Dalo by se z toho usuzovat, že pokud bude mít funkce v daném bodě nevlastní
 * Pomocí derivací lze řešit i výpočet některých limit, slouží k tomu *L'Hospitalovo pravidlo*
 
 
+## Diferenciál
+
+![definice diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/def%20diferenci%C3%A1l.PNG)
+![veta diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/veta%20diferencial.PNG)
+
+Tedy existuje-li diferenciál, pak se musí rovnat derivaci a naopak.
+
+![definice 2 diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/def.2%20diferenci%C3%A1l.PNG)
+![ilustrace diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/ilustrace%20diferenci%C3%A1l.PNG)
+
+### Geometrický význam diferenciálu
+Nahradíme-li přírůstek &Delta;*f(a, h) = f(a + h) - f(a)* diferenciálem *f'(a)h*, znamená to, že místo přírůstku na křivce *y = f(x)* bereme jen přírůstek na tečně *y = f(a) + f'(a)(x - a)*. Tím se dopouštíme chyby, která je rovna funkci *r(h)h*. Přitom funkce *r(h)h* se pro malá a zmenšující se *h* blíží k nule rychleji než diferenciál (tedy pokud je různý od nuly). Tedy čím menší bude *h*, tím menší relativní chyby se dopustíme, nahradíme-li &Delta;*f* diferenciálem d*f*.
+
+#### Příklad
+*Diferenciálu často používáme k přibližnému určení chyby, které se dopustíme, počítáme-li hodnotu nějaké veličiny z jiné veličiny, která byla změřena s určitou chybou. Naměříme-li např. že poloměr koule je x = 4cm, a víme-li, že chyba měření je maximálne h = 0,1mm, pak maximální chyba při výpočtu objemu ![vypočet objemu diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/vypocet%20objemu%20diferenci%C3%A1l.PNG) 
+je přibližně dána diferenciálem V'(4) * 0,01 = 4 * &pi; * 4<sup>2</sup> * 0,01 = 0,64 + &pi;cm<sup>3</sup> &asymp; 2cm<sup>3</sup>.
+
+
+## Integrál

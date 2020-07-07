@@ -84,7 +84,7 @@ Dole máme body *a* a *a + h*, na ose *y* pak *f(a)* a *f(a + h)*. Nyní opět v
 ### Vlastní a nevlastní derivace
 I derivace máme vlastní a nevlastní, podobně jako limity funkcí. Co to znamená? Derivace je vlastní, pokud je hodnota derivace v bodě rovna nějakému &#8477;. Derivace je nevlastní, pokud je rovna +&infin; nebo -&infin;. Jak si to představit graficky? Kdy je směrnice "nekonečná"? Začneme lehčí otázkou - jak vypadá tečna, jejíž směrnice se rovná nějakému velkému číslu? Z grafu tangensu je vidět, že pokud je hodnota tangensu vysoká, pak se úhel blíží 90° (pokud se pohybujeme v intervalu **(0, 180)**).
 
-Dalo by se z toho usuzovat, že pokud bude mít funkce v daném bodě nevlastní derivaci, pak bude tečna svírat s osou *x* pravý úhel, bude na ni kolmá. Jak by mohl vypadat graf takové funkce a ve kterém bodě by byla tečna kolmá k ose *x*? Třeba funkce ***y = <sup>3</sup>&radic;x***:
+Dalo by se z toho usuzovat, že pokud bude mít funkce v daném bodě nevlastní derivaci, pak bude tečna svírat s osou *x* pravý úhel, bude na ni kolmá. Jak by mohl vypadat graf takové funkce a ve kterém bodě by byla tečna kolmá k ose *x*? Třeba funkce ***y = &#8731;x***:
 
 ![tečna funkce k třetí odmocnině](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/te%C4%8Dna%20funkce%20k%20t%C5%99et%C3%AD%20mocnin%C4%9B.PNG)
 

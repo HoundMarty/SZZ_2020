@@ -114,9 +114,9 @@ Tedy existuje-li diferenciál, pak se musí rovnat derivaci a naopak.
 Nahradíme-li přírůstek &Delta;*f(a, h) = f(a + h) - f(a)* diferenciálem *f'(a)h*, znamená to, že místo přírůstku na křivce *y = f(x)* bereme jen přírůstek na tečně *y = f(a) + f'(a)(x - a)*. Tím se dopouštíme chyby, která je rovna funkci *r(h)h*. Přitom funkce *r(h)h* se pro malá a zmenšující se *h* blíží k nule rychleji než diferenciál (tedy pokud je různý od nuly). Tedy čím menší bude *h*, tím menší relativní chyby se dopustíme, nahradíme-li &Delta;*f* diferenciálem d*f*.
 
 #### Příklad
-*Diferenciálu často používáme k přibližnému určení chyby, které se dopustíme, počítáme-li hodnotu nějaké veličiny z jiné veličiny, která byla změřena s určitou chybou. Naměříme-li např. že poloměr koule je x = 4cm, a víme-li, že chyba měření je maximálne h = 0,1mm, pak maximální chyba při výpočtu objemu ![vypočet objemu diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/vypocet%20objemu%20diferenci%C3%A1l.PNG) 
+*Diferenciálu často používáme k přibližnému určení chyby, které se dopustíme, počítáme-li hodnotu nějaké veličiny z jiné veličiny, která byla změřena s určitou chybou. Naměříme-li např. že poloměr koule je x = 4cm, a víme-li, že chyba měření je maximálne h = 0,1mm, pak maximální chyba při výpočtu objemu* ![vypočet objemu diferenciál](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/vypocet%20objemu%20diferenci%C3%A1l.PNG) 
 
-je přibližně dána diferenciálem V'(4) * 0,01 = 4 * &pi; * 4<sup>2</sup> * 0,01 = 0,64 + &pi;cm<sup>3</sup> &asymp; 2cm<sup>3</sup>.
+*je přibližně dána diferenciálem V'(4) * 0,01 = 4 * &pi; * 4<sup>2</sup> * 0,01 = 0,64 + &pi;cm<sup>3</sup> &asymp; 2cm<sup>3</sup>.*
 
 
 ## Integrál

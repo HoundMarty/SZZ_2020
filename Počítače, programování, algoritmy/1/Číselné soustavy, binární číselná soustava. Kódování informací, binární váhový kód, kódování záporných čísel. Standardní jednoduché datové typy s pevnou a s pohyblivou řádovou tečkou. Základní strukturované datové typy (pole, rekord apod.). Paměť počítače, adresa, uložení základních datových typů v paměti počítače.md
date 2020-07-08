@@ -4,11 +4,11 @@
 
 Libovolné kladné číslo **F(Z)** lze zapsa pomocí mnohočlenu ve tvaru:
 
-![vzorec číselné soustavy]()
+![vzorec číselné soustavy](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/%C4%8D%C3%ADseln%C3%A9%20soustavy%20vzorec.PNG)
 
 Kde **F(Z)** je číslo vyjádřené v číselné soustavě o základu **Z**, **a<sub>i</sub>** jsou číselné koeficienty, **m** je počet řádových míst. Pro jednoduchost v číselných soustavách zapisujeme pouze koeficienty **a<sub>i</sub>**. V praxi potom často řešíme problém, který koeficient vyjadřuje nejvyšší řád a který nejnižší. Zpravidla se řídíme konvencí, která říká, že nejvyšší řád je vlevo a nejnižší vpravo. U dvojkové soustavy nejvyšší řád označujeme jako **MSB**(Most Significant Bit) a nejnižší řád jako **LSB**(Least Significant Bit).
 
-![tabulka vyjádření 0-15]()
+![tabulka vyjádření 0-15](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/%C4%8D%C3%ADseln%C3%A9%20soustavy%20vyj%C3%A1d%C5%99en%C3%AD%200-15.PNG)
 
 #### Vyjádřete číslo 275(10) binárně.
 Číslo v desítkové soustavě 275(10) je možno vyjádřit jako **2&times;10<sup>2</sup>+7&times;10<sup>1</sup>+5&times;10<sup>0</sup>**. Číslo 1101(2) ve dvojkové soustavě vyjadřuje hodnotu **1&times;2<sup>3</sup>+1&times;2<sup>2</sup>+0&times;2<sup>1</sup>+1&times;2<sup>0</sup>**, neboť předpokládáme, že MSB je vlevo.
@@ -29,7 +29,7 @@ Dvojkový doplněk binárního čísla získáme jako jeho inverzi zvětšenou o
 
 Rozsah čísel, který je možné pomocí dvojkového doplňku zakódovat je (-2<sup>n-1</sup>) až (2<sup>n-1</sup>-1), to znamená, že pomocí např. 4bitů můžeme zakódovat čísla v rozsahu: -8 až 7, pomocí 8mi bitů čísla v rozsahu: -128 až 127 atd.
 
-![dvojkový doplněk]()
+![dvojkový doplněk](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/dvojkov%C3%BD%20dopln%C4%9Bk.PNG)
 
 Při převodu kladného čísla do dvojkového doplňku musíme nejprve kladné binární číslo doplnit zleva nulami na správný počet bitů(např. říslo 5<sub>10</sub> = 101<sub>2</sub> doplníme na 0101<sub>2</sub>). Vpřípadě, že tam neučiníme, nedostaneme správnou hodnotu.
 
@@ -38,7 +38,7 @@ Při převodu kladného čísla do dvojkového doplňku musíme nejprve kladné 
 
 ## Standardní datové typy
 
-![rozdělení datových typů]()
+![rozdělení datových typů](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/rozd%C4%9Blen%C3%AD%20datov%C3%BDch%20typ%C5%AF.PNG)
 
 #### Datové typy s pevnou řádovou tečkou
 Jsou to nejjednodušší celočísené typy, pomocí kterých lze vyjadřovat celé čísla. Můžeme je dále rozdělit na **znaménkové** a **neznaménkové**. Rozsah hodnot, které pomocí nich lze vyjádřit je dán jejich velikostí v paměti(počtem bitů).
@@ -56,7 +56,7 @@ Jsou to nejjednodušší celočísené typy, pomocí kterých lze vyjadřovat ce
 ###### Ukládání dat do paměti
 Pro zjednodušení budeme o paměti uvažovat jako o tabulce, která má na každém řádku osmibitové číslo (může být až 64bit... podle velikosti sběrnice). Adresa 0 je nahoře a každý další řádek má adresu o 1 vyšší. Překladače vyšších programovacích jazyků ukládají promměnné postupně do paměti v pořadí, jak jsou deklarovány. Pro promměné které mají velikost jeden bajt(Byte, Char) je situace jednoduchá. vícebajtové promměné se ukládají do paměti postupně od nejméně významného bajtu (LSB).
 
-![ukládání dat do paměti]()
+![ukládání dat do paměti](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/ukl%C3%A1d%C3%A1n%C3%AD%20dat%20do%20pameti.PNG)
 
 #### Datové typy s plovoucí řádovou tečkou
 Abychom mohli pracovat s reálnými čísly ve dvojkové soustavě, můžeme využít stejný přístup jako v desítkové soustavě. To znamené, že číslo nejprve převedeme do dvojkové soustavy a případně ještě do normalizovaného tvaru.
@@ -71,3 +71,4 @@ Pokud už máme reálné číslo ve dvojkové soustavě v normalizovaném tvaru,
 Je zřejmé, že možností je velmi mnoho. Ve vyšších programovacích jazicích se používají hlavně tyto tři datové typy: **Single, Double (někdy označen jako Real), Extended.**
 
 ##### Datový typ single
+Pro zápis reálného čísla v tomto datovém typu se využívá celkem 32 bitů. Jeden bit je znaménkový, osm bitů je vyhrazeno pro exponent a 23 bitů pro mantisu. Mantisa je absolutní hodnota reálného čísla v normalizovaném tvaru, ale zapisuje se bez první jedničky. V normalizovaném tvaru totiž binární číslo vždy začíná jedničkou, pak je desetinná čárka a pak následuje zbytek absolutní hodnoty. Proto j zbytečné první jedničku před desetinou čárkou zapisovat.

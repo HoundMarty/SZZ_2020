@@ -1,0 +1,1 @@
+# Číselné soustavy, binární číselná soustava. Kódování informací, binární váhový kód, kódování záporných čísel. Standardní jednoduché datové typy s pevnou a s pohyblivou řádovou tečkou. Základní strukturované datové typy (pole, rekord apod.). Paměť počítače, adresa, uložení základních datových typů v paměti počítače.

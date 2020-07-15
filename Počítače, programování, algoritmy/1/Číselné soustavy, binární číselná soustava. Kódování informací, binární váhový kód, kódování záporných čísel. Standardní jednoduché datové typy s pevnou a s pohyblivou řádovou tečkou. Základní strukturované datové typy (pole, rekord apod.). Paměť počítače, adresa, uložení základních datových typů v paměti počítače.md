@@ -72,3 +72,7 @@ Je zřejmé, že možností je velmi mnoho. Ve vyšších programovacích jazic�
 
 ##### Datový typ single
 Pro zápis reálného čísla v tomto datovém typu se využívá celkem 32 bitů. Jeden bit je znaménkový, osm bitů je vyhrazeno pro exponent a 23 bitů pro mantisu. Mantisa je absolutní hodnota reálného čísla v normalizovaném tvaru, ale zapisuje se bez první jedničky. V normalizovaném tvaru totiž binární číslo vždy začíná jedničkou, pak je desetinná čárka a pak následuje zbytek absolutní hodnoty. Proto j zbytečné první jedničku před desetinou čárkou zapisovat.
+
+![single](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/Datov%C3%BD%20typ%20single_prvni.PNG)
+
+![single_příkald](https://github.com/HoundMarty/SZZ_2020/blob/master/Po%C4%8D%C3%ADta%C4%8De%2C%20programov%C3%A1n%C3%AD%2C%20algoritmy/imgs/Datov%C3%BD%20typ%20single.PNG)

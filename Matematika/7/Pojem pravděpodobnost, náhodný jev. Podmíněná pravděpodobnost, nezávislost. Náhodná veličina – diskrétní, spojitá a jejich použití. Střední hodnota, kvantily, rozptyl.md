@@ -1,0 +1,2 @@
+
+# Pojem pravděpodobnost, náhodný jev. Podmíněná pravděpodobnost, nezávislost. Náhodná veličina – diskrétní, spojitá a jejich použití. Střední hodnota, kvantily, rozptyl

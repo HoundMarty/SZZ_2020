@@ -1,0 +1,1 @@
+# Principy vrstvené architektury počítačových sítí, referenční model OSI. Charakteristika lokálních počítačových sítí. Technologie Ethernet, její principy a vývoj, algoritmus CSMA CD. Bezdrátové lokální sítě standardu IEEE 802.11.

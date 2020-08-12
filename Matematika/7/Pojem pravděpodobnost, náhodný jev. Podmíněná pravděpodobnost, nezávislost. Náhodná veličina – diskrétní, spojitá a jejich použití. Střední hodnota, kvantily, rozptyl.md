@@ -64,3 +64,7 @@ Distribuční funkci diskrétní náhodné veličiny můžeme vyjádřit pomocí
 ![distribuční funkce diskrétní náhodné veličiny](https://github.com/HoundMarty/SZZ_2020/blob/master/Matematika/imgs/distribucni%20funkce%20dis%20nahodne%20veliciny.gif)
 
 tzn. jako součet pravděpodobností těch x<sub>i</sub>, které jsou menší než x.
+
+## Spojitá náhodná veličina
+Spojitá náhodná veličina nabývá jakékoliv hodnoty v určitém intervalu.
+

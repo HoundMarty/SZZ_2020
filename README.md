@@ -1,4 +1,4 @@
-# SZZ_2020
+# SZZ_2020-21
 Otázky ke státnicím pro TUL/IT bakaláře
 
 

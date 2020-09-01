@@ -64,4 +64,4 @@ Popisuje, kolikrát se každá instance dané entity může účstanit daného t
 
 *Poznámka* Vazby M:N jsou později dekomponovány na tzv. průnikový typ entity, neboli asociační entitu, protože je nelze realizovat v relační databázi.
  
- [//]: #(dorazit parialitu a závislost s konkrétním a přehledným příkladem)
+ [//]: # (dorazit parialitu a závislost s konkrétním a přehledným příkladem)

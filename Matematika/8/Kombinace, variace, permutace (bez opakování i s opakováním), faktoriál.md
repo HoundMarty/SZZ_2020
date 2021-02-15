@@ -2,3 +2,5 @@
 
 # Kombinace, variace, permutace (bez opakování i s opakováním), faktoriál.
 
+
+

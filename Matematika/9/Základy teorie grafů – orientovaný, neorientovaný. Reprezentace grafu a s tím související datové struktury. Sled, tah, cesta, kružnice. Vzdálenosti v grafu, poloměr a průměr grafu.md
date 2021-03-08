@@ -14,12 +14,12 @@ Formálnější definice by zněla takto: Mějme graf G = (V, E), kde (V, E) je 
 
 Příklad grafu (izomorfního grafu). Tyto grafy jsou identické.
 
-[](izomorfni graf)
+![Izomorfní graf](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/izomorfni_graf.PNG)
 
 ### Orientovaný vs neorientovaný
 Orientovaný graf je graf, který má uspořádané dvojice vrcholů.
 
-[](orientovany vs neorientovany)
+![Orientovaný vs neorientovaný](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/orientovany_vs_neorientovany.png)
 
 ### Vzdálenost
 Hrany k sobě mohou mít přiřazené číslo, které si lze představit jako vzdálenost mezi městy nebo např. cenu, kterou musíme zaplatit za průchod hranou. Říkáme, že graf má ohodnocené hrany.
@@ -27,7 +27,7 @@ Hrany k sobě mohou mít přiřazené číslo, které si lze představit jako vz
 ### Poloměr 
 Poloměr neb otaké excentricita grafu je vzdálenost vrcholu od dalších vrcholů.
 
-[](polomer)
+![Poloměr](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/polomer.PNG)
 
 ### Průměr
 Největší excentricita v grafu se nazývá průměr.
@@ -38,24 +38,24 @@ Záleží na typu grafu a co s nimi chcete dělat. Ukážeme si dvě nejčastěj
 #### Matice souslednosti
 Pro neorientované grafy budeme mít symetrickou matici, kde Aij = 1 pokud Vi sousedí s Vj a 0 pokud nikoliv. Pro orientované grafy to bude nesymetrické. To, že sousedí Vi s Vj neznamená, že sousedí Vj s Vi. Tedy to, že víte, jak se dostat z X do Y po jednosměrce neznamená, že to umíte i nazpátek.
 
-[](matice souslednosti)
+![Matice souslednosti](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/matice_souslednosti.PNG)
 
 #### Reprezentace v poli
 Jednoduché typy grafů, např. binární stromy, tj. kde každý uzel má právě 2 potomky kromě listů, se dají efektivně uložit v obyčejném poli. Víte, že vrchol na pozici i má potomky na pozici 2i + 1 a 2i + 2. Zde máme příklad binárního stromu, konkrétně haldy. Halda je datová struktura, kde předek stromu je vždy menší než potomek (kořen je minimum).
 
-[](ulozeni v poli)
+![Uložení v poli](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/ulozeni_v_poli.PNG)
 
 ### Typy grafů
 
-[](definice cestovani grafem)
-[](cestovani priklad)
+![Definice cestování grafem](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/definice_cest_v_grafu.PNG)
+![Cestovani grafem](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/cestovani_priklad.PNG)
 
 #### Cesta
 Cesta je posloupnost vrcholů a hran, kde existuje pouze jeden způsob, jak se dostat z vrcholu V do vrcholu U
 
-[](cesta)
+![Cesta](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/cesta.PNG)
 
 #### Kružnice
 Kružnici můžeme definovat jako cestu, jejíž koncové vrcholy spojíme do jednoho.
 
-[](kružnice)
+![Kružnice](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Matematika/imgs/kruznice.PNG)

@@ -1,66 +1,77 @@
+# Webové aplikace – charakteristika programování na straně serveru a klienta. Základy jazyka JavaScript. DOM a přístup k prvkům stránky. Jazyk PHP. Problematika uchovávání stavových informací, cookies.
 
-HTTP cookie je soubor, ve kterém lze ukládat libovolná data, která vývojáři jednotlivých webových stránek se rozhodnou ukládat
+## Charakteristika programování na straně serveru
+ * Skripty jsou vykonávány na straně serveru, 
+	* Skript reaguje na vstup od klienta a není nikdy odeslán od webového prohlížeče
+	* Nejznámější jazyky: PHP, NodeJS, ASP.NET, Python
 
-Jsou navrženy tak, aby si webová stránka pamatovala nejrůznější informace, ať už se jedná o uživatelské přihlášení, nákupní košík, různá nastavení na webu, vyplněné formuláře apod. Prakticky lze ale do nich uložit téměř cokoliv.
+## Charakteristika programování na straně klienta
+	* Klient si v rámci načtení webové stránky stáhne i skripty ze serveru
+	* Kód skriptu si může uživatel zobrazit
+	* Není vyžadován dodatečný SW na serveru(výhoda u externích hostingů)
 
-Historie:
-První cookies byly použity v roce 1994, kde firma řešila vytíženost serveru s objednávkami. Tím že použili cookies, tak se data o objednávce rozložila mezi server a klientské PC. 
+## JavaScript
+	* Objektově orientovaný skpriptovací jazyk 
+	* Interpretaci jazyka provádí webový prohlížeč
+	* Slabě typované proměnné - je jedno co do ní uložíme
+	* Podporuje if, while, loops, switch, do while
+	* Místo tříd používá prototypování - dají se dělat téměř stejné věci jako s třídou, jen v případě dědičnosti nebo vytváření nových instancí se bavíme o tzv. klonování původního objektu - prototypu
+ *(Nejdůležitějším rozdílem mezi dědičností založenou na třídách a prototypech je, že třída definuje typ, který lze vytvořit za běhu, zatímco prototyp je sám instancí objektu)*
+ 
+ ## DOM: - Document Object Model
+	* Multiplatformní na jazyku nezávislé rozhraní, kde HTML nebo XML je reprezentováno jako stromová struktura, kde každý uzel je objekt, který reprezentuje část daného dokumentu
+	* Jedná se o objektově orientovanou reprezentaci webové stránky, která může být modifikována skriptem
+ 
+ ![DOM stromová struktura](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/DOM_tree.png)
+ 
+## Přístup k prvkům stránky:
+Ty jsou dostupné díky API  
+Pokud použijeme document nebo window elementy, v tu chvíli přistupujeme k DOM elementu  
+Laicky řečeno, pokud chceme pomocí JavaScriptu cokoliv měnit na webové stránce, nebo z ní něco dostat, přistupujeme k DOM elemetnu  
 
-Druhy Cookies:
-------------------------
+Zdroj: (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
-Session Cookie
-Nebo také in-memory cookie nebo non-persisten cookie je pouze dočasná cookie, která je naživu pouze do doby, než uživatel zavře prohlížeč. Na rozdíl od jiných cookies nemají relační cookies přiřazené datum vypršení platnosti, což je způsob, jakým prohlížeč ví, že s nimi zachází jako se session cookies
+Ukázka: 
+![Interakce s DOM elementy](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/DOM_interaction.png)
 
-Persistent cookie
-Ta už má nastaven datum expirace. IInformace jsou přeneseny na server pokaždé, když uživatel navštíví web, ke kterému patří, nebo pokaždé, když si uživatel prohlíží zdroj patřící k tomuto webu z jiného webu - tracking cookies
-Ty jsou využívány především k reklamě, ale dají se použít i pro udržení přihlášení uživatele. 
+## PHP: - Hypertext Preprocessor, původním názvem Personal Home Page
+Při použití PHP pro dynamické stránky jsou skripty prováděny na straně serveru – k uživateli je přenášen až výsledek jejich činnosti.   
+Interpret PHP skriptu je možné volat pomocí příkazového řádku, dotazovacích metod HTTP nebo pomocí webových služeb  
+ * Jazyk PHP je dynamicky typován - tzn. že datový typ proměnné je vázán na hodnotu, nikoliv na proměnnou.
+	* PHP podporuje reference, pomocí kterých lze do proměnných ukládat odkazy na libovolnou jinou proměnnou, nebo i prvek jejího poleý, tzn. že datový typ proměnné je vázán na hodnotu, nikoliv na proměnnou.
+	* Rozsáhlý soubor funkcí v základní knihovně PHP 
+	* Nativní podpora mnoha databázových systémů, 
 
-Secure Cookie
-Cookie, která může být přenášena pouze přes šifrovaná spojení (např. HTTPS). Informace zda-li jde o secure cookie je řešena příznakem/flagem "Secure"
+## Problematika uchovávání stavových informací, cookies
+Aby server nemusel držet veškeré informace o klientovi, jeho předvolby na webové stránce, jeho nákupní košík apod., pro snížení zátěže serverů byl v 90. letech vytvořen systém cookies.  
+HTTP cookie je soubor, ve kterém lze ukládat libovolná data, která vývojáři jednotlivých webových stránek se rozhodnou ukládat  
+Jsou navrženy tak, aby si webová stránka pamatovala nejrůznější informace, ať už se jedná o uživatelské přihlášení, nákupní košík, různá nastavení na webu, vyplněné formuláře apod. Prakticky lze ale do nich uložit téměř cokoliv.  
 
-Same-Site Cookie
-Přišel s tím Google v roce 2016. Cookie má atribut "SameSite" který může nabývat hodnot Strict, Lax or None. Strict umožňuje prohlížeči posílat cookies pouze ze stejné domény/stránky, pokud se jedná o víc webů. 
+### Druhy Cookies
+Session Cookie  
+Persistent cookie  
+Secure Cookie  
+Same-Site Cookie  
+Third-party cookie  
+SuperCookie  
+Cookie wall  
 
-Third-party cookie
-Standardní cookie z konkrétního webu je tzv. "First-party cookie". Pokud ale na tomto webu jsou třeba reklamy, nebo FB tlačíka Like apod., tak tam už se jedná o "Third-party cookie". Když je načtena např. reklama, uloží se cookie poskytovatele této reklamy. Pokud pak navštívíme jinou stránku se stejným poskytovatelem reklamy, je opět vytvořena nová cookie tohoto poskytovatele. Zároveň ale dojde k načtení všech cookie od tohoto poskytovatele, ten pak může z těcho informací vytvářet histroii a lépe tak cílit reklamu. 
-
-SuperCookie
-Cookie pro "top level domain" jako je .cz nebo .com. Jedná se ale o potenciální hrozbu a většina prohlížečů ji blokuje. Např. Supercookie na .cz  … Uživatel je přihlášen např. na seznam.cz To by pak mohlo způsobit login request na stránce např. irozhlas.cz. Lze použít k falešnému přihlášení nebo ke změně informací o uživateli.
-
-Cookie wall
-Na webové stránce se objeví wall cookie a informuje uživatele o používání cookies webových stránek. Ten nemá možnost odmítnutí a web není přístupný bez tracking cookies
-
-Vytvoření cookie:
-Cookies jsou nastavovány pomocí HTTP hlavičky Set-Cookie zaslané v HTTP response od serveru. 
+### Vytvoření cookie:
+Cookies jsou nastavovány pomocí HTTP hlavičky Set-Cookie zaslané v HTTP response od serveru.
 Ukázka odpovědi serveru:
-HTTP/1.0 200 OK
-Content-type: text/html
-Set-Cookie: theme=light
-Set-Cookie: sessionToken=abc123; Expires=Wed, 09 Jun 2021 10:18:14 GMT
+> HTTP/1.0 200 OK
+> Content-type: text/htm 
+> Set-Cookie: theme=light
+> Set-Cookie: sessionToken=abc123; Expires=Wed, 09 Jun 2021 10:18:14 GMT
 
-Z čeho se skládá cookie:
-1) Jméno  cookie/proměnné 2) hodnota 3) Atributy - volitelná položka - Atributy ukládají informace, jako je platnost souboru cookie, doména, flagy apod.
+### Z čeho se skládá cookie:
+1. Jméno  cookie/proměnné 
+2. hodnota 
+3. Atributy - volitelná položka - Atributy ukládají informace, jako je platnost souboru cookie, doména, flagy apod.
 
-Attributy cookie
- Ty používají prohlížeče k určení, kdy odstranit soubor cookie, zablokovat soubor cookie nebo zda odeslat soubor cookie na server. Nejsou součástí dat, která se odesílají na server, tam se posílá jen název cookie a hodnota. 
-Zjednodušeně řečeno 
-
-
-GDPR - General Data Protection Regulation
-Nařízení z roku 2016, které dává právní rámec nakládání s osobními údaji. Primárním cílem GDPR je dát jednotlivcům kontrolu nad jejich osobními údaji a zjednodušit regulační prostředí pro mezinárodní obchod sjednocením regulace v rámci EU
+### Attributy cookie
+ Ty používají prohlížeče k určení, kdy odstranit soubor cookie, zablokovat soubor cookie nebo zda odeslat soubor cookie na server. Nejsou součástí dat, která se odesílají na server, tam se posílá jen název cookie a hodnota.
 
 
 
-Útoky:
------------
 
-Cross-site-request-forgery - CSRF nebo XSRF
-Jde o typ škodlivého zneužití webu, kde jsou zadávány neoprávněné příkazy od uživatele, kterému webová aplikace důvěřuje. Existuje mnoho způsobů, jak škodlivý web může takové příkazy přenášet; speciálně vytvořené obrazové značky, skryté formuláře a JavaScript XMLHttpRequests. Ty mohou fungovat bez interakce nebo dokonce znalostí uživatele. Využívá CSRF důvěru, kterou má web v prohlížeči uživatele. 
-Uživatel, který je ověřen pomocí souboru cookie uloženého ve webovém prohlížeči uživatele, může nevědomky odeslat požadavek HTTP na web, který uživateli důvěřuje, a tím způsobí nežádoucí akci
-Obrana:
-Synchrozizer token pattern - STP je technika, při které je token, tajný klíč a jedinečná hodnota - HASH pro každý požadavek vložen webovou aplikací do všech formulářů HTML a ověřen na straně serveru. 
-
-Cross-site-scripting - XSS
-Jedná se o vložení škodlivého kódu do vstupů nebo výstupů pro uživatele, kdy spolu s vyplněním např. formuláře, dojde k vložení i skriptu. 
-Javascript má totiž k obsahu cookies (pokud nejsou chráněny příznakem HttpOnly) přístup, a není tak pro něj problém jejich obsah přečíst a odeslat útočníkovi. Jednoduchý skript sloužící útočníkovi pro krádež a odeslání session ID

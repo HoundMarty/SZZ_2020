@@ -31,16 +31,17 @@ Laicky řečeno, pokud chceme pomocí JavaScriptu cokoliv měnit na webové str�
 
 Zdroj: (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 
-Ukázka: 
+Ukázka:  
+
 ![Interakce s DOM elementy](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/DOM_interaction.png)
 
 ## PHP: - Hypertext Preprocessor, původním názvem Personal Home Page
 Při použití PHP pro dynamické stránky jsou skripty prováděny na straně serveru – k uživateli je přenášen až výsledek jejich činnosti.   
 Interpret PHP skriptu je možné volat pomocí příkazového řádku, dotazovacích metod HTTP nebo pomocí webových služeb  
  * Jazyk PHP je dynamicky typován - tzn. že datový typ proměnné je vázán na hodnotu, nikoliv na proměnnou.
-	* PHP podporuje reference, pomocí kterých lze do proměnných ukládat odkazy na libovolnou jinou proměnnou, nebo i prvek jejího poleý, tzn. že datový typ proměnné je vázán na hodnotu, nikoliv na proměnnou.
-	* Rozsáhlý soubor funkcí v základní knihovně PHP 
-	* Nativní podpora mnoha databázových systémů, 
+ * PHP podporuje reference, pomocí kterých lze do proměnných ukládat odkazy na libovolnou jinou proměnnou, nebo i prvek jejího poleý, tzn. že datový typ proměnné je vázán na hodnotu, nikoliv na proměnnou.
+ * Rozsáhlý soubor funkcí v základní knihovně PHP 
+ * Nativní podpora mnoha databázových systémů, 
 
 ## Problematika uchovávání stavových informací, cookies
 Aby server nemusel držet veškeré informace o klientovi, jeho předvolby na webové stránce, jeho nákupní košík apod., pro snížení zátěže serverů byl v 90. letech vytvořen systém cookies.  
@@ -59,10 +60,10 @@ Cookie wall
 ### Vytvoření cookie:
 Cookies jsou nastavovány pomocí HTTP hlavičky Set-Cookie zaslané v HTTP response od serveru.
 Ukázka odpovědi serveru:
-> HTTP/1.0 200 OK
-> Content-type: text/htm 
-> Set-Cookie: theme=light
-> Set-Cookie: sessionToken=abc123; Expires=Wed, 09 Jun 2021 10:18:14 GMT
+> HTTP/1.0 200 OK  
+> Content-type: text/htm   
+> Set-Cookie: theme=light  
+> Set-Cookie: sessionToken=abc123; Expires=Wed, 09 Jun 2021 10:18:14 GMT  
 
 ### Z čeho se skládá cookie:
 1. Jméno  cookie/proměnné 

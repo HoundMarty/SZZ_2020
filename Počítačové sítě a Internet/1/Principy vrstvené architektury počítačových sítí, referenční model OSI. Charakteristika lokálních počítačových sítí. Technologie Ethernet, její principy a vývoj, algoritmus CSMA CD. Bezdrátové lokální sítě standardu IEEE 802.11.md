@@ -50,3 +50,8 @@ Nejrozšířenějším představitelem CSMA/CD je klasický Ethernet. Ten byl po
 * Stanice vybere náhodné číslo z intervalu od 0 do 2<sub>k</sub> - 1, kde k je pořadové číslo pokusu (od 10. pokusu se interval již nezvětšuje a horní hranice zůstává 2<sub>10</sub> - 1, tedy 1023). Náhodné číslo určuje délku čekací doby, po jejímž uplynutí stanice opakuje pokus o odeslání od bodu 1. Maximální počet pokusů je 16, poté je pokus o odeslání považován za neúspěšný.
 
 **Modernější varianty Ethernetu však opouštějí sdílené přenosové médium, používají přepínače s plně duplexním režimem provozu a metoda CSMA/CD u nich není nadále uplatňována.** 
+
+## Bezdrátové lokální sítě standardu IEEE 802.11
+
+![Wi-Fi standardy](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/Wi-Fi_IEEE.png)
+

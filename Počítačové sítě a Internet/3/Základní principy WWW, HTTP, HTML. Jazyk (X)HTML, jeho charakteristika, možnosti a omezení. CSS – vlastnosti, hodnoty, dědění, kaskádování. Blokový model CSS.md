@@ -12,27 +12,27 @@ World Wide Web je označení pro systém prohlížení, ukládání a odkazován
 (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works> )
 
 ### Dotazovací metody
-GET - Požadavek na uvedený objekt se zasláním případných dat (proměnné prohlížeče
-HEAD - Metoda podobná GET, avšak nepředává data. Poskytne pouze metadata o požadovaném cíli (velikost, typ, datum změny, …).
-POST Odesílá uživatelská data na server.
-PUT - Nahraje data na server. Objekt je jméno vytvářeného souboru. Používá se velmi zřídka, pro nahrávání dat na server se běžně používá FTP nebo SCP/SSH
-DELETE - Smaže uvedený objekt ze serveru.
-TRACE - Odešle kopii obdrženého požadavku zpět odesílateli, takže klient může zjistit, co na požadavku mění nebo přidávají servery, kterými požadavek prochází.
-OPTIONS - Dotaz na server, jaké podporuje metody.
-CONNECT - Spojí se s uvedeným objektem přes uvedený port. Používá se při průchodu skrze proxy pro ustanovení kanálu SSL.
+> GET - Požadavek na uvedený objekt se zasláním případných dat (proměnné prohlížeče
+> HEAD - Metoda podobná GET, avšak nepředává data. Poskytne pouze metadata o požadovaném cíli (velikost, typ, datum změny, …).
+> POST Odesílá uživatelská data na server.
+> PUT - Nahraje data na server. Objekt je jméno vytvářeného souboru. Používá se velmi zřídka, pro nahrávání dat na server se běžně používá FTP nebo SCP/SSH
+> DELETE - Smaže uvedený objekt ze serveru.
+>TRACE - Odešle kopii obdrženého požadavku zpět odesílateli, takže klient může zjistit, co na požadavku mění nebo přidávají servery, kterými požadavek prochází.
+> OPTIONS - Dotaz na server, jaké podporuje metody.
+> CONNECT - Spojí se s uvedeným objektem přes uvedený port. Používá se při průchodu skrze proxy pro ustanovení kanálu SSL.
 
 "Bezpečné metody" - tj. metody které jsou pouze read only - GET, HEAD, OPTIONS, TRACE
 
 ### Verze HTTP
 HTTP/1.0
-	- Naprostý základ, pouze GET, HEAD, POST
+	* Naprostý základ, pouze GET, HEAD, POST
 HTTP/1.1
-	- Přidány nové metody 
-	- Optimalizace
+	* Přidány nové metody 
+	* Optimalizace
 HTTP/2.0
-	- Velká optimalizace pro multimédia
+	* Velká optimalizace pro multimédia
 HTTPS
-	- Secure verze, používá SSL/TLS pro šifrování komunikace
+	* Secure verze, používá SSL/TLS pro šifrování komunikace
 
 ## HTML
 Jazyk HTML je charakterizován množinou značek (tzv. tagů) a jejich vlastností (atributů) definovaných pro danou verzi
@@ -40,7 +40,7 @@ Jazyk HTML je charakterizován množinou značek (tzv. tagů) a jejich vlastnost
 Vývoj jazyka především v 90. letech
 HTML4 = rok 1997, HTML5 = rok 2014
 
-##Dokument v jazyku HTML má předepsanou strukturu
+## Dokument v jazyku HTML má předepsanou strukturu
 	* Deklarace typu dokumentu – značka <!DOCTYPE html> sděluje prohlížeči, že otevřel HTML dokument.
 	* Kořenový element – prvek html (značky <html> a </html>) – reprezentuje celý dokument.
 	* Hlavička dokumentu – prvek head (značky <head> a </head>) – obsahuje metadata, která se vztahují k celému dokumentu. Definuje např. kódování, název dokumentu, autora, popis, klíčová slova, titulek dokumentu nebo kaskádové styly.
@@ -62,20 +62,20 @@ HTML4 = rok 1997, HTML5 = rok 2014
 Jazyk pro popis způsobu zobrazení elementů na stránkách napsaných v jazycích HTML, XHTML nebo XML. Hlavním smyslem je umožnit návrhářům oddělit vzhled dokumentu od jeho struktury a obsahu
 
 ### Výhody/možnosti:
-	- Rozsáhlé možnosti formátování
-	- Oddělení struktury a stylu, možnost cachování stylů
-	- Vlastnosti elementů lze měnit pomocí javascriptu a jiných jazyků
-	- Lze s ním formátovat i XML
-	- Přizpůsobení vizuálu zařízení
+	* Rozsáhlé možnosti formátování
+	* Oddělení struktury a stylu, možnost cachování stylů
+	* Vlastnosti elementů lze měnit pomocí javascriptu a jiných jazyků
+	* Lze s ním formátovat i XML
+	* Přizpůsobení vizuálu zařízení
 
 ### Nevýhody:
-	- Každý prohlížeč může CSS překládat jinak - v Chromu to funguje v IE nikoliv apod.
+	* Každý prohlížeč může CSS překládat jinak - v Chromu to funguje v IE nikoliv apod.
 
 ### Limity:
-	- CSS neposkytuje možnost pro symbolický zápis proměnné nebo konstanty, všechny hodnoty musí být vepsány přímo v kódu
-	- Omezení na 4096 selectorů ve starších verzích prohlížečů
-	- Žádné cykly nebo programování
-	- Nelze procházet strom elementů pozpátku
+	* CSS neposkytuje možnost pro symbolický zápis proměnné nebo konstanty, všechny hodnoty musí být vepsány přímo v kódu
+	* Omezení na 4096 selectorů ve starších verzích prohlížečů
+	* Žádné cykly nebo programování
+	* Nelze procházet strom elementů pozpátku
   
 ### CSS Selector
   * Výběr elementu, který chceme stylovat
@@ -96,14 +96,15 @@ Kaskáda je popis vlastností aplikovaných na konkrétní tag
   (https://www.vzhurudolu.cz/prirucka/css-dedicnost)
 
 ## Blokový model CSS:
-Celá stránka se skládá z boxů/bloků
-Typickým příkladem je třeba <div>, <p>, <ul>, <li>
+> Celá stránka se skládá z boxů/bloků
+> Typickým příkladem je třeba <div>, <p>, <ul>, <li>
+> V podstatě jde o možnosti Možnosti "marginu", paddingu, velikosti a umístění boxů
 
 ![Blokový model obr. 1](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/Blokovy_model_css.png)
 
 ![Blokový model obr. 2](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/Blokovy_model_2_css.png)
 
-V podstatě jde o možnosti Možnosti "marginu", paddingu, velikosti a umístění boxů
+
 
 
 

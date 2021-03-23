@@ -12,14 +12,14 @@ World Wide Web je označení pro systém prohlížení, ukládání a odkazován
 (https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works> )
 
 ### Dotazovací metody
-> GET - Požadavek na uvedený objekt se zasláním případných dat (proměnné prohlížeče
-> HEAD - Metoda podobná GET, avšak nepředává data. Poskytne pouze metadata o požadovaném cíli (velikost, typ, datum změny, …).
-> POST Odesílá uživatelská data na server.
-> PUT - Nahraje data na server. Objekt je jméno vytvářeného souboru. Používá se velmi zřídka, pro nahrávání dat na server se běžně používá FTP nebo SCP/SSH
-> DELETE - Smaže uvedený objekt ze serveru.
->TRACE - Odešle kopii obdrženého požadavku zpět odesílateli, takže klient může zjistit, co na požadavku mění nebo přidávají servery, kterými požadavek prochází.
-> OPTIONS - Dotaz na server, jaké podporuje metody.
-> CONNECT - Spojí se s uvedeným objektem přes uvedený port. Používá se při průchodu skrze proxy pro ustanovení kanálu SSL.
+GET - Požadavek na uvedený objekt se zasláním případných dat (proměnné prohlížeče  
+HEAD - Metoda podobná GET, avšak nepředává data. Poskytne pouze metadata o požadovaném cíli (velikost, typ, datum změny, …).  
+POST Odesílá uživatelská data na server.  
+PUT - Nahraje data na server. Objekt je jméno vytvářeného souboru. Používá se velmi zřídka, pro nahrávání dat na server se běžně používá FTP nebo SCP/SSH  
+DELETE - Smaže uvedený objekt ze serveru.  
+TRACE - Odešle kopii obdrženého požadavku zpět odesílateli, takže klient může zjistit, co na požadavku mění nebo přidávají servery, kterými požadavek prochází.  
+OPTIONS - Dotaz na server, jaké podporuje metody.  
+CONNECT - Spojí se s uvedeným objektem přes uvedený port. Používá se při průchodu skrze proxy pro ustanovení kanálu SSL.  
 
 "Bezpečné metody" - tj. metody které jsou pouze read only - GET, HEAD, OPTIONS, TRACE
 

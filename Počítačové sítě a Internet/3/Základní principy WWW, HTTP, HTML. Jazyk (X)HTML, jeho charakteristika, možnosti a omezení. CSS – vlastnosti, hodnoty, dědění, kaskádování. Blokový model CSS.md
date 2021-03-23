@@ -96,9 +96,9 @@ Kaskáda je popis vlastností aplikovaných na konkrétní tag
   (https://www.vzhurudolu.cz/prirucka/css-dedicnost)
 
 ## Blokový model CSS:
-> Celá stránka se skládá z boxů/bloků
-> Typickým příkladem je třeba <div>, <p>, <ul>, <li>
-> V podstatě jde o možnosti Možnosti "marginu", paddingu, velikosti a umístění boxů
+Celá stránka se skládá z boxů/bloků  
+Typickým příkladem je třeba <div>, <p>, <ul>, <li>  
+V podstatě jde o možnosti Možnosti "marginu", paddingu, velikosti a umístění boxů  
 
 ![Blokový model obr. 1](https://github.com/HoundMarty/SZZ_2020-21/blob/master/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9%20s%C3%ADt%C4%9B%20a%20Internet/imgs/Blokovy_model_css.png)
 

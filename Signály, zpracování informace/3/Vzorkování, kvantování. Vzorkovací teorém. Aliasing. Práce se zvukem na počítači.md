@@ -1,4 +1,7 @@
 # Vzorkování, kvantování. Vzorkovací teorém. Aliasing. Práce se zvukem na počítači.
+Analogový signál - spojitý v čase (prostoru) a hodnotách - je převeden na číslicový signál - definovaný pouze v některých časových (prostorových) bodech a nabývající pouze konečného počtu hodnot.
+
+**Dvě základní operace** Vzorkování a kvantování
 
 ## Vzorkování
 - Vzorkování je proces diskretizace spojitého signálu.
@@ -17,6 +20,14 @@
 ## Vzorkovací teorém
 - **Podmínka vzorkování** - vzorkovací frekvence musí být alespoň 2 x vyšší než nejvyšší frekvence obsažená ve vzorkovaném signálu.
 - Při splnění vzorkovacího teorému nedojde k Aliasiangu.
+
+### Poznámky k AD převodu
+Po převedení různých fyzikálních veličin do bezrozměrných čísel hrozí problém ztráty informace o původním významu signálu
+Je proto nutné zvlášť uchovat údaje o 
+- Původní veličině
+- Původních jednotkách a jejich převodním  vztahu
+- Vzorkovací frekvenci
+- Čase snímání
 
 ## Aliasing
 

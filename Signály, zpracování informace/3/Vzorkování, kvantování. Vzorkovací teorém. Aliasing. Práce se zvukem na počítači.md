@@ -33,6 +33,8 @@ Je proto nutné zvlášť uchovat údaje o
 
 ![Aliasing](https://user-images.githubusercontent.com/29363626/119261123-36b29200-bbd6-11eb-8e7b-e95e091bc4e5.png)
 
+### Antialiasing 
+Před A/D převodník vložit speciální obvod **antialiasingový filtr**, který nepropustí složky o frekvencích vyšších než f<sub>s</sub>/2 (tzv. dolní propust).
 ## Práce se zvukem na PC
 - Nástroje umožňující práci se signálem
 - programovací jazyky

@@ -34,9 +34,9 @@ Otázky ke státnicím pro TUL/IT bakaláře
 4. ✅ Webové aplikace – charakteristika programování na straně serveru a klienta. Základy jazyka JavaScript. DOM a přístup k prvkům stránky. Jazyk PHP. Problematika uchovávání stavových informací, cookies.
 
 **Signály, zpracování informace**:
-1. Signály a systémy. LTI systémy. Přenosová funkce, impulsní odezva. Konvoluce u číslicových signálů. Autokorelační funkce a její praktické využití. 
-2. Fourierovy řady. Diskrétní Fourierova transformace, její použití a interpretace. Spektrum signálu, FFT. Číslicové filtry FIR a IIR. Filtrace v čase nebo prostoru.
-3. Vzorkování, kvantování. Vzorkovací teorém. Aliasing. Práce se zvukem na počítači.
+1. ✅ Signály a systémy. LTI systémy. Přenosová funkce, impulsní odezva. Konvoluce u číslicových signálů. Autokorelační funkce a její praktické využití. 
+2. ✅ Fourierovy řady. Diskrétní Fourierova transformace, její použití a interpretace. Spektrum signálu, FFT. Číslicové filtry FIR a IIR. Filtrace v čase nebo prostoru.
+3. ✅ Vzorkování, kvantování. Vzorkovací teorém. Aliasing. Práce se zvukem na počítači.
 
 **Hardware a elektronika**:
 1. ✅ Kombinační logické obvody (jejich charakteristika, možnosti realizace pomocí logických hradel, multiplexorů a dekodérů.

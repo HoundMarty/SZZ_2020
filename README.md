@@ -23,7 +23,7 @@ Otázky ke státnicím pro TUL/IT bakaláře
 3. ✅ Vyšší programovací jazyky (Java, C, C# apod.). Struktura programu, implementace příkazů a datových typů. Práce se soubory, operace vstupu a výstupu. Algoritmizace základních úloh, třídění, vyhledávání, porovnání algoritmů.
 4. Organizace paměti programu ve vyšším programovacím jazyce, základní části paměti a jejich význam. Referenční typy. Datový typ ukazatel. Rezervování a uvolňování paměti. Statické a dynamické přidělování paměti. Dynamické datové struktury, vytvoření, základní operace.
 5. Členění programu v jazyce vyšší úrovně. Metody, funkce, procedury, makra. Parametry metod, procedur a funkcí a způsoby jejich předávání. Globální a lokální proměnné. Rekurze a její použití. Rekurzivní a nerekurzivní realizace vybraných algoritmů. Využití zásobníku programu.
-6. Objektově orientované programování, význam a základní principy, struktura programu. Zapouzdření, data metody, správa přístupu. Dědičnost, polymorfismus, pozdní vazba. Abstraktní třídy, rozhraní jako abstraktní datová struktura. Kompatibilita typů. Hierarchie tříd. Genericita a její využití. Výjimky, jejich využití a ošetření.
+6. ✅ Objektově orientované programování, význam a základní principy, struktura programu. Zapouzdření, data metody, správa přístupu. Dědičnost, polymorfismus, pozdní vazba. Abstraktní třídy, rozhraní jako abstraktní datová struktura. Kompatibilita typů. Hierarchie tříd. Genericita a její využití. Výjimky, jejich využití a ošetření.
 7. Tvorba aplikací v prostředí konzole a MS Windows. Vývojová prostředí. Programátorské rozhraní operačního systému. Pokročilejší programátorské techniky jako zpracování zpráv, programování vláken, synchronizace procesů.
 8. Operační systém, vysvětlení pojmu, typy, poskytované funkce. Správa procesů v operačním systému, vztah programu a procesu, životní cyklus procesu. 
 
@@ -43,7 +43,7 @@ Otázky ke státnicím pro TUL/IT bakaláře
 2. ✅ Sekvenční obvody (základní vlastnosti a typy klopných obvodů, registry, posuvné registry, čítače, návrh automatů typu Mealy a Moore).
 3. Aritmetické obvody (výpočet aritmetických operací pomocí číslicových obvodů).
 4. Procesory, FPGA obvody (realizace automatů pomocí procesorů a FPGA)
-5. Základní technologie výroby integrovaných obvodů
+5. ✅ Základní technologie výroby integrovaných obvodů
 
 **Databázové systémy**:
 1. ✅ Konceptuální návrh relačních databází, základní konstrukty, ER diagram, kardinalita, parcialita, závislost.

@@ -41,7 +41,7 @@ Otázky ke státnicím pro TUL/IT bakaláře
 **Hardware a elektronika**:
 1. ✅ Kombinační logické obvody (jejich charakteristika, možnosti realizace pomocí logických hradel, multiplexorů a dekodérů.
 2. ✅ Sekvenční obvody (základní vlastnosti a typy klopných obvodů, registry, posuvné registry, čítače, návrh automatů typu Mealy a Moore).
-3. Aritmetické obvody (výpočet aritmetických operací pomocí číslicových obvodů).
+3. 🟨 Aritmetické obvody (výpočet aritmetických operací pomocí číslicových obvodů).
 4. Procesory, FPGA obvody (realizace automatů pomocí procesorů a FPGA)
 5. ✅ Základní technologie výroby integrovaných obvodů
 
